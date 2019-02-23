@@ -6,8 +6,8 @@
  * THIS CLASS IS PROVIDED TO YOU. DO NOT CHANGE IT.
  * YOU SHOULD, HOWEVER, READ THE DOCUMENTATION.
  *
- * @author Stephen
- * @version 2019-02-18
+ * @author Joseph
+ * @version 2019-02-23
  */
 public class Ellipse extends Shape
 {
