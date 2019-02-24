@@ -20,6 +20,8 @@ public class Circle extends Ellipse
 	public Circle(String id, double radius)
 	{
 		// TODO: complete this...
+		//Use Radius twice because the major and minor axes are equal.
+		super(id, radius, radius);
 	}
 
 	/**
@@ -52,5 +54,6 @@ public class Circle extends Ellipse
 	public String getShapeType()
 	{
 		// TODO: complete this...
+		return "Circle";
 	}
 }

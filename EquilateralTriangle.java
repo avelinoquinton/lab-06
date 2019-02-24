@@ -22,6 +22,8 @@ public class EquilateralTriangle extends Polygon
 	public EquilateralTriangle(String id, double sideLength)
 	{
 		// TODO: complete this...
+		super(id);
+		this.sideLength = sideLength;
 	}
 
 	/**
@@ -44,5 +46,6 @@ public class EquilateralTriangle extends Polygon
 	public String getShapeType()
 	{
 		// TODO: complete this...
+		return "Equilateral Triangle";
 	}
 }
