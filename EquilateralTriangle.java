@@ -29,12 +29,13 @@ public class EquilateralTriangle extends Polygon
 	/**
 	 * Gets the area of the triangle.
 	 *
-	 * @return The area of the triangle (b*h/2 = sidelength*sidelength*root(3)/4)
+	 * @return The area of the triangle (b*h/2 = sideLength * sideLength * root(3)/4)
 	 */
 	@Override
 	public double getArea()
 	{
 		// TODO: complete this...
+		return (sideLength * sideLength) * Math.sqrt(3)/4;
 	}
 
 	/**
