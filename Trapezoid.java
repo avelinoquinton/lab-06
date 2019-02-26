@@ -17,13 +17,13 @@ public class Trapezoid extends Polygon
 	private double leftSide, rightSide, topBase, bottomBase;
 
 	/**
-     * The rectangle constructor. Store the side and base information and store in the sideLengths array.
+     * The Trapezoid constructor. Store the side and base information and store in the sideLengths array.
      *
      * @param id The created shape's name id.
      * @param leftSide The left side (not parallel) of the trapezoid.
      * @param rightSide The right side (not parallel) of the trapezoid.
      * @param topBase The top base (parallel to the bottom base) of the trapezoid.
-     * @param bottomBase The bottom base (pallel to the top base) of the trapezoid.
+     * @param bottomBase The bottom base (parallel to the top base) of the trapezoid.
      */
 	public Trapezoid(String id, double leftSide, double rightSide, double topBase, double bottomBase)
 	{
@@ -33,6 +33,11 @@ public class Trapezoid extends Polygon
 		this.rightSide = rightSide;
 		this.topBase = topBase;
 		this.bottomBase = bottomBase;
+		
+		this.sideLengths.add(leftSide);
+		this.sideLengths.add(rightSide);
+		this.sideLengths.add(topBase);
+		this.sideLengths.add(bottomBase);
 	}
 
 	/**
@@ -46,7 +51,7 @@ public class Trapezoid extends Polygon
 	@Override
 	public double getArea()
 	{
-		// Use shorter variables names for sake of simplicty:
+		// Use shorter variables names for sake of simplicity:
 		double a = this.bottomBase;
 		double b = this.topBase;
 		double c = this.leftSide;

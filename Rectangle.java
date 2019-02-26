@@ -11,9 +11,7 @@ public class Rectangle extends Polygon{
 	/**
 	 * These variables stores the lengths of the height and width of a rectangle/square
 	 */
-	private double height;
-	
-	private double width;
+	private double height, width;
 	
 	/**
      * The rectangle constructor. Store the side and base information and store in the sideLengths array.
@@ -24,8 +22,16 @@ public class Rectangle extends Polygon{
      */
 	public Rectangle(String id, double height, double width) {
 		super(id);
+		
+		// Initialized here for local use
 		this.height = height;
 		this.width = width;
+		
+		// Adds these variables to the array "sideLengths" 
+		this.sideLengths.add(height);
+		this.sideLengths.add(height);
+		this.sideLengths.add(width);
+		this.sideLengths.add(width);
 	}
 	
 	/**
@@ -35,17 +41,17 @@ public class Rectangle extends Polygon{
 	 */
 	@Override
 	public double getArea() {
-		return width * height;
+		return height * width;
 	}
 	
 	/**
 	 * Gets the type of the shape.
 	 *
-	 * @return The string "Square".
+	 * @return The string "Rectangle".
 	 */
 	@Override
 	public String getShapeType() {
-		return "Square";
+		return "Rectangle";
 	}
 
 }
