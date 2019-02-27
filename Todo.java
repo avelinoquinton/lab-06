@@ -1,6 +1,6 @@
 public class Todo {/*
 Lab Section_________: 13
-Last Modified_______: 2019-02-23
+Last Modified_______: 2019-02-26
 OU ID_______________: 113302496
 OU EMAIL____________: josephquinton@ou.edu
 
@@ -17,9 +17,6 @@ Tasks:
 10. Write Shape Tests
 11. Write Comparator Classes
 12. Test and debug shape tests
-13.
-14.
-15.
 
 Estimated Time (minutes):
 1. 15
@@ -34,9 +31,6 @@ Estimated Time (minutes):
 10. 20
 11. 20
 12. 15
-13.
-14.
-15.
 
 Actual Time (minutes):
 1. 15
@@ -51,7 +45,5 @@ Actual Time (minutes):
 10. 20
 11. 15
 12. 15
-13.
-14.
-15.
+
 */}

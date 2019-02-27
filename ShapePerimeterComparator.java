@@ -43,7 +43,15 @@ public class ShapePerimeterComparator implements Comparator<Shape>
 			return 1;
 		}
 		else {
-			return 0;
+			if(s1.getArea() < s2.getArea()) {
+				return -1;
+			}
+			else if(s1.getArea() > s2.getArea()) {
+				return 1;
+			}
+			else {
+				return 0;
+			}
 		}
 		
 	}
@@ -65,8 +73,6 @@ public class ShapePerimeterComparator implements Comparator<Shape>
 		if(perimeterOne == perimeterTwo) {
 			return true;
 		}
-		else {
-			return false;
-		}
+		return false;
 	}
 }

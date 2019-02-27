@@ -1,5 +1,3 @@
-import org.junit.Assert;
-
 /**
  * Lab 6
  *
@@ -54,6 +52,5 @@ public class Driver
 		sorter.sortShapes(new ShapePerimeterComparator());
 		System.out.println("###");
 		System.out.println(sorter);
-		
 	}
 }

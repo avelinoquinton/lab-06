@@ -126,8 +126,8 @@ public class ShapeTest
 	public void ShapeToStringTest()
 	{
 		// TODO: complete this...
-		Shape rec = new Rectangle("Rectangle1", 4.0, 5.0);
-		Assert.assertEquals("Rectangle	 ID = Rectangle1	 area = 20.000	 perimeter = 18.000", rec.toString());
+
+
 	}
 
 	//==================================================================================================================
