@@ -35,7 +35,6 @@ public class ShapeAreaComparator implements Comparator<Shape>
 		double s1Area = s1.getArea();
 		double s2Area = s2.getArea();
 
-		
 		if(s1Area < s2Area) {
 			return -1;
 		}

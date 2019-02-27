@@ -12,11 +12,11 @@ Tasks:
 5. Fill in getArea/Perimeter methods
 6. Finish Shape Class toString()
 7. Finish Polygon Class
-8.
-9.
-10.
-11.
-12.
+8. Update Shape Derived Classes Constructors
+9. Write Shape compareTo() Method
+10. Write Shape Tests
+11. Write Comparator Classes
+12. Test and debug shape tests
 13.
 14.
 15.
@@ -29,11 +29,11 @@ Estimated Time (minutes):
 5. 10
 6. 5
 7. 5
-8.
-9.
-10.
-11.
-12.
+8. 5
+9. 25
+10. 20
+11. 20
+12. 15
 13.
 14.
 15.
@@ -46,11 +46,11 @@ Actual Time (minutes):
 5. 10
 6. 5
 7. 5
-8.
-9.
-10.
-11.
-12.
+8. 5
+9. 20
+10. 20
+11. 15
+12. 15
 13.
 14.
 15.

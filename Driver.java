@@ -1,3 +1,5 @@
+import org.junit.Assert;
+
 /**
  * Lab 6
  *
@@ -5,8 +7,8 @@
  * through use of the defined natural ordering of shapes (compareTo in Shape) and
  * an alternate order (compare in ShapeAreaComparator/ShapePerimeterComparator).
  *
- * @author Stephen
- * @version 2019-02-18
+ * @author Joseph
+ * @version 2019-02-26
  */
 public class Driver
 {
@@ -38,6 +40,8 @@ public class Driver
 
 		// Sort by default sorting (Shape's compareTo):
 		sorter.sortShapes();
+		
+		
 		System.out.println("###");
 		System.out.println(sorter);
 
@@ -50,5 +54,6 @@ public class Driver
 		sorter.sortShapes(new ShapePerimeterComparator());
 		System.out.println("###");
 		System.out.println(sorter);
+		
 	}
 }

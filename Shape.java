@@ -157,6 +157,6 @@ public abstract class Shape implements Comparable<Shape>
 		Double shapeArea = getArea();
 		Double shapePerimeter = getPerimeter();
 		
-		return String.format("%s\t ID = %s\t area = %.3f\t perimeter = %.3f\t", shapeType, shapeID, shapeArea, shapePerimeter );
+		return String.format("%s\t ID = %s\t area = %.3f\t perimeter = %.3f", shapeType, shapeID, shapeArea, shapePerimeter );
 	}
 }

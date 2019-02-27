@@ -43,6 +43,21 @@ public class ShapeSorterTest
 	public void SortShapesDefaultTest()
 	{
 		// TODO: complete this...
+		ShapeSorter sorterNew = new ShapeSorter();
+
+		//Shapes to test
+		Shape rect1 = new Rectangle("A", 8.0, 5.0);
+		Shape rect2 = new Rectangle("B", 8.0, 2.0);
+		Shape rect3 = new Rectangle("C", 6.0, 8.0);
+		sorterNew.addShape(rect1);
+		sorterNew.addShape(rect2);
+		sorterNew.addShape(rect3);
+		sorterNew.sortShapes();
+		String expectedToString = "Rectangle	 ID = B	 area = 16.000	 perimeter = 20.000\n" + 
+				"Rectangle	 ID = A	 area = 40.000	 perimeter = 26.000\n" + 
+				"Rectangle	 ID = C	 area = 48.000	 perimeter = 28.000\n";
+		
+		Assert.assertEquals(expectedToString, sorterNew.toString());
 	}
 
 	/**
@@ -52,7 +67,19 @@ public class ShapeSorterTest
 	public void SortShapesAreaTest()
 	{
 		// TODO: complete this...
-	}
+		ShapeSorter sorterNew = new ShapeSorter();
+
+		//Shapes to test
+		Shape rect1 = new Rectangle("A", 8.0, 5.0);
+		Shape rect2 = new Rectangle("B", 8.0, 2.0);
+		Shape rect3 = new Rectangle("C", 6.0, 8.0);
+		sorterNew.addShape(rect1);
+		sorterNew.addShape(rect2);
+		sorterNew.addShape(rect3);
+		sorterNew.sortShapes(new ShapeAreaComparator());
+		
+		Assert.assertEquals("Shapes sorted incorrectly", sorterNew.toString());
+}
 
 	/**
 	 * Tests sorting by perimeter ordering.
@@ -61,6 +88,18 @@ public class ShapeSorterTest
 	public void SortShapesPerimeterTest()
 	{
 		// TODO: complete this...
+		ShapeSorter sorterNew = new ShapeSorter();
+
+		//Shapes to test
+		Shape rect1 = new Rectangle("A", 8.0, 5.0);
+		Shape rect2 = new Rectangle("B", 8.0, 2.0);
+		Shape rect3 = new Rectangle("C", 6.0, 8.0);
+		sorterNew.addShape(rect1);
+		sorterNew.addShape(rect2);
+		sorterNew.addShape(rect3);
+		sorterNew.sortShapes(new ShapePerimeterComparator());
+		
+		Assert.assertEquals("Shapes sorted incorrectly", sorterNew.toString());
 	}
 
 	/**
@@ -70,5 +109,20 @@ public class ShapeSorterTest
 	public void ToStringTest()
 	{
 		// TODO: complete this...
+		ShapeSorter sorterNew = new ShapeSorter();
+
+		//Shapes to test
+		Shape rect1 = new Rectangle("A", 8.0, 5.0);
+		Shape rect2 = new Rectangle("B", 8.0, 2.0);
+		Shape rect3 = new Rectangle("C", 6.0, 8.0);
+		sorterNew.addShape(rect1);
+		sorterNew.addShape(rect2);
+		sorterNew.addShape(rect3);
+		sorterNew.sortShapes();
+		String expectedToString = "Rectangle	 ID = B	 area = 16.000	 perimeter = 20.000\n" + 
+				"Rectangle	 ID = A	 area = 40.000	 perimeter = 26.000\n" + 
+				"Rectangle	 ID = C	 area = 48.000	 perimeter = 28.000\n";
+		
+		Assert.assertEquals(expectedToString, sorterNew.toString());
 	}
 }
